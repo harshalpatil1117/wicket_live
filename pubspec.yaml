@@ -1,0 +1,64 @@
+name: wicket_live_apk
+description: "A new Flutter project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  common:
+    path: ../packages/common
+  network:
+    path: ../packages/network
+  wicket_live_assets:
+    path: ../packages/wicket_live_assets
+  cupertino_icons: ^1.0.2
+  flutter_screenutil: ^5.9.0
+  dimensions_theme: ^0.0.3
+  fluttertoast: ^8.2.4
+  http: ^1.2.0
+  lottie: ^2.7.0
+  animated_text_kit: ^4.2.2
+  flutter_staggered_grid_view: ^0.7.0
+  animated_emoji: ^3.0.0
+  flutter_dismissible_tile: ^1.0.2
+  pdf: ^3.10.8
+  path_provider: ^2.1.2
+  syncfusion_flutter_pdf: ^21.2.4
+  permission_handler: ^11.3.0
+  device_info_plus: ^9.1.2
+
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.13.1
+  flutter_test:
+    sdk: flutter
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/apk_icon.png"
+  min_sdk_android: 21
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: packages/common/src/assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: packages/common/src/assets/fonts/Poppins-Light.ttf
+          weight: 300
+        - asset: packages/common/src/assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: packages/common/src/assets/fonts/Poppins-Regular.ttf
+          weight: 400
+
+
